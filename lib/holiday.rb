@@ -94,7 +94,7 @@ def all_supplies_in_holidays(holiday_hash)
         holidayconcat = holidayconcat.split("_").each{|x| x.capitalize!}
         holidayconcat = holidayconcat.join(" ")
       end
-      puts "#{holidayconcat}: #{supply.join(", ")}"
+      puts "  #{holidayconcat}: #{supply.join(", ")}"
     end
   end
 end
