@@ -107,5 +107,8 @@ def all_holidays_with_bbq(holiday_hash)
       if supply.include?["BBQ"]
         array.push(holiday)
       end
+    end
+  end
+  array
 
 end
