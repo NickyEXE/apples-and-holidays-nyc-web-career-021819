@@ -92,7 +92,7 @@ def all_supplies_in_holidays(holiday_hash)
       holidayconcat = holiday.to_s.capitalize!
       if holidayconcat.include? "_"
         holidayconcat = holidayconcat.split("_").each{|x| x.capitalize!}
-        holidayconcat.join(" ")
+        holidayconcat = holidayconcat.join(" ")
       puts "#{holidayconcat}: #{supply.join(", ")}"
     end
   end
