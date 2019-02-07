@@ -91,6 +91,7 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.each do |holiday,supply|
       holidayconcat = holiday.to_s.capitalize!
       if holidayconcat.include? "_"
+        holidayconcat = holidayconcat.split(_).each{|x| capitalize!}
       puts "#{holidayconcat}: #{supply.join(", ")}"
     end
   end
