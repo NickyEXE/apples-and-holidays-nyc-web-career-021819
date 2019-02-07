@@ -91,7 +91,7 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.each do |holiday,supply|
       holidayconcat = holiday.to_s
       if holiday.
-      puts "#{holiday}: #{supply.join(", ")}"
+      puts "#{holidayconcat}: #{supply.join(", ")}"
     end
   end
 end
